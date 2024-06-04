@@ -18,7 +18,7 @@ pipeline {
                     script{
                         dir("terraform")
                         {
-                            git branch: 'main', credentialsId: 'Gittoken', url: 'https://github.com/ShailAdmin/Terraform.git'
+                            git branch: 'main', credentialsId: 'Gittoken', url: 'https://github.com/ShailAdmin/terratest.git'
                         }
                     }
                 }
