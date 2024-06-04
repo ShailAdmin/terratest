@@ -1,5 +1,6 @@
 provider "aws" {
-  
+  access_key = "AKIAUD7KQ6YJZNUBW55I"
+  secret_key = "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"
 }
 terraform {
   backend "s3" {
