@@ -1,8 +1,8 @@
 provider "aws" {
   
 }
-resource "aws_s3_bucket" "backend" {
-  bucket = "terraform-poc-bucket-1"
+resource "aws_s3_bucket" "backend1" {
+  bucket = "terraform-poc-bucket-11"
   tags = {
     Name        = "terraform-state"
     Env        = "Dev"
