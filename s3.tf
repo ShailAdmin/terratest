@@ -1,6 +1,14 @@
 provider "aws" {
   
 }
+terraform {
+  backend "s3" {
+    bucket         = "terraform.poc.backend  "
+    key            = "terraform/terraform.tfstate"
+    region         = "us-east-1" 
+  }
+}
+
 resource "aws_s3_bucket" "backend1" {
   bucket = "terraform-poc-bucket-11"
   tags = {
