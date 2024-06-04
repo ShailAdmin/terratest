@@ -1,3 +1,6 @@
+provider "aws" {
+  
+}
 resource "aws_s3_bucket" "backend" {
   bucket = "terraform-poc-bucket-1"
   tags = {
