@@ -23,5 +23,4 @@ resource "aws_s3_bucket" "backend1" {
 resource "aws_s3_bucket_object" "FolderForStateFile" {
   bucket = aws_s3_bucket.backend.id
   key    = "terraform/state/"
-  content = ""
 }
