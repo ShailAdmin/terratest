@@ -1,5 +1,5 @@
 provider "aws" {
-    region = "us-east-1"  
+    region = "ap-south-1"  
 }
 resource "aws_s3_bucket" "my_bucket" {
   bucket = "jenkinstest1234" # Change this to your desired bucket name
