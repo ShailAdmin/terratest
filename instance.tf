@@ -9,13 +9,7 @@ resource "aws_instance" "foo" {
       Name = "TF-Instance"
   }
 }
-resource "aws_s3_bucket" "backend" {
-  bucket = "terraform-poc-bucket-1"
-  tags = {
-    Name        = "terraform-state"
-    Env        = "Dev"
-  }
-  versioning {
-    enabled = true
-  }
+resource "aws_s3_bucket" "my_bucket" {
+  bucket = "my-unique-bucket-name" # Change this to your desired bucket name
+  acl    = "private" # Access control list, you can change this as needed
 }
